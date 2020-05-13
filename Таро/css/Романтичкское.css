@@ -1,0 +1,193 @@
+
+.img_taro {
+    width: 100%;
+    height: 530px;
+}
+.menu {
+ /* margin-top: -400px; */
+margin-top: -22px;
+}
+.mained {
+  margin-top: 30px;
+  height: 300px;
+  padding: 0px;
+  display: flex;
+  width: 100%;
+}
+/* Слайдер */
+
+.slick-list {
+  overflow: hidden;
+  /* Что бы не вылазила не активная фотка на активную */
+}
+.slider {
+    min-width: 0;
+    position: relative;
+    margin: 0px 0px;
+  }
+  .slider_item {
+    min-width: 0;
+    margin: 0 7px;
+  }
+  slick-list {
+    overflow: hidden;
+    /* Что бы не вылазила не активная фотка на активную */
+  }
+  /* Лента слайдов */
+  .slick-track{
+    display: flex;
+    /* align-items: flex-start; */
+  }
+  .slider .slick-arrow {
+    position: absolute; 
+    top: 100%;
+    z-index: 10;
+    margin: -30px 0 0 0;
+    /* подняди кнопки почти ровно в центр по высоте фоток */
+    font-size: 0;
+    /* убрать надписи на фотках */
+    width: 30px;
+    height: 47px;
+    /* Размер стрелочек */
+    opacity: .6;
+   }
+   .slider .slick-arrow:hover{
+     opacity: 1;
+   }
+   .slider .slick-arrow.slick-prev{
+    left: 5%;
+    /* прижали к углу */
+    background: url('../../css/cursor/left_big_h289_w200.png') 0 0 / 100% no-repeat;
+    /* Размер 100% */
+    border: none;
+    /* убирает рамки */
+  }
+  /* Стрелка вправо hover*/
+.slider .slick-arrow.slick-next{
+  right: 3.3%;
+  margin-right: 20px;
+   /* прижали к углу */
+   background: url('../../css/cursor/right_big_w200_h289.png') 0 0 / 100% no-repeat;
+   /* Размер 100% */
+   border: none;
+   /* убирает рамки */
+  }
+  /* Точки (булиты) */
+.slider .slick-dots{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.slider .slick-dots li{
+margin: 0 10px;
+/* Отступы от кнопок */
+}
+/* Элемент точки */
+.slick-dots li button{
+  font-size: 0;
+  /* Убрать текст */
+  width: 10px;
+  height: 10px;
+  background-color: rgb(255, 255, 255);
+  /* Размер кнопок */
+  border-radius: 50%;
+  /* Округляем */
+ border: none;
+/* Рамки */
+}
+/* Класс который присваивается активной круглой кнопке переключения */
+.slider .slick-dots li.slick-active button{
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  /* Размер границы + хз + цвет */
+}
+
+/* Романтическое */
+.cart h1 {
+  text-align: center;
+  color: #fff;
+}
+.cart img {
+  width: 370px;
+  height: 405px;
+  float: left;
+  margin: 0 10px 100px 10px;
+  
+}
+.cart p {
+  color: #fff;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+
+/* ABOUT */
+.about {
+margin: 220px 15px 30px 15px;
+}
+.about p {
+  color: #fff;
+  margin: 0 0 0 0;
+}
+
+@media screen and (max-width: 920px) {
+  .cart img {
+    width: 200px;
+    height: 250px;
+  }
+  .slider_item {
+   opacity: 0.7;
+  }
+  .slick-center {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 800px) {
+
+  .about {
+  margin: 200px 15px 20px 15px;
+  }
+.img_taro {
+  width: 100%;
+  height: 500px;
+}
+}
+@media screen and (max-width: 700px) {
+  .img_taro {
+    width: 100%;
+    height: 340px;
+  }
+  .cart img {
+  margin: 0 20px 0 10px; 
+}
+  .about {
+    margin: 0px 15px 20px 15px;
+    }
+}
+@media screen and (max-width: 500px) {
+  .img_taro {
+    height: 340px;
+  }
+  .about {
+    margin: 0 8px 20px 8px;
+    }
+}
+@media screen and (max-width: 420px) {
+  .cart img {
+    width: 96%;
+    height: 330px;
+    display: block;
+    float: none;
+    text-align: center;
+    margin: 0 0 20px 6px;
+    
+  }
+}
+@media screen and (max-width: 361px) {
+  .img_taro {
+    height: 260px;
+}
+.about {
+  margin: -80px 8px 20px 8px;
+  }
+}

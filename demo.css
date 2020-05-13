@@ -1,0 +1,22 @@
+body {
+  background-image: url(img/402551_mistics_and_scary.jpg);
+  
+  /* Выравнивание картинки по центру */
+  background-position: center center;
+  
+  background-repeat: no-repeat;
+  
+  background-attachment: fixed;
+  
+  /* Изменение размера картинки, в зависимости от экрана */
+  background-size: cover;
+  
+  background-color: #3D3D3D;
+}
+ 
+/* adaptive */
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url(img/402551_mistics_and_scary.jpg);
+  }
+}
